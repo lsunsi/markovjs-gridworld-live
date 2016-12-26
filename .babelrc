@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "latest",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "syntax-object-rest-spread",
+    "transform-object-rest-spread"
+  ]
+}

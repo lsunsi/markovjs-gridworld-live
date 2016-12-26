@@ -1,0 +1,53 @@
+{
+  "name": "markovjs-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "lsunsi",
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "bulma": "^0.2.3",
+    "color": "^1.0.3",
+    "immutable": "^3.8.1",
+    "markovjs": "^0.1.3",
+    "markovjs-immutable": "^0.1.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.13.0",
+    "reselect": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-plugin-react": "^6.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "xo": "^0.17.1"
+  },
+  "scripts": {
+    "start:dev": "webpack-dev-server",
+    "check:style": "xo"
+  },
+  "xo": {
+    "parser": "babel-eslint",
+    "extends": "xo-react",
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "envs": [
+      "browser"
+    ]
+  }
+}
