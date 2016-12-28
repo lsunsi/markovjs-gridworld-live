@@ -1,6 +1,7 @@
 import {Record, Set} from 'immutable'
 
 const ACTIONS = {DOWN: '↓', LEFT: '←', RIGHT: '→', UP: '↑'}
+const ENTITIES = {ROBSON: '🤖', GOAL: '❤', HAZARD: '💀'}
 
 const Tile = new Record({row: 0, col: 0})
 
@@ -11,7 +12,7 @@ const State = new Record({
   hazards: new Set([new Tile({row: 0, col: 1}), new Tile({row: 1, col: 1})])
 })
 
-const observe = s => s.robson
+const observe = new Record({robson: null, goals: null})
 const actions = () => Object.values(ACTIONS)
 
 const victory = s => s.goals.size === 0
@@ -43,7 +44,7 @@ const act = (s, a) => {
 }
 
 export {
-  ACTIONS,
+  ACTIONS, ENTITIES,
   Tile, State,
   observe, actions,
   victory, defeat, final,

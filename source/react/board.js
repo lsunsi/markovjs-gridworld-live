@@ -17,9 +17,7 @@ const Board = ({board}) =>
     )}
   </div>
 
-Board.propTypes = {
-  board: PropTypes.object
-}
+Board.propTypes = {board: PropTypes.object}
 
 const states = createStructuredSelector({board})
 
